@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstilosPracticaN°1.css">
+    <title>Pagina web</title>
+</head>
+<body>
+    <h1 class="encabezado">Multimedia</h1>
+    <p class="parrafos"> En esta seccion veremos los tipos de multimedia <br>
+                        como imagen, video y audio.</p> <br>
+    <h3 class="Titulos">Imagen</h3>                    
+    <img id="imagen" src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/03/09/16468231897426.jpg" alt="Playa"> <br>
+    <h3 class="Titulos">Video</h3>  
+    <video id="video" src="Intro.mp4" type="video/mp4" loop controls autoplay muted></video> <br>
+    <h3 class="Titulos">Audio</h3>
+    <audio id="audio" src="gnr-welcome.mp3" type="audio/mp3" loop controls autoplay muted></audio> <br> <br>
+    
+    <h1 class="encabezado">Formularios</h1>
+    <p class="parrafos"> En esta seccion veremos un formulario donde el usuario <br>
+        debe completar sus datos.</p>
+    <form class="formularios" action="resultados.html" method="get">
+        <div>
+            <label for="nombredelusuario"> Nombre del Usuario:</label> 
+            <input type="text" name="nombredelusuario" id="nombredelusuario" required>
+        </div>
+        <div>
+            <label for="edad"> Edad del Usuario:</label> 
+            <input type="number" name="edad" id="edad" min="0" max="120" required>
+        </div>
+        <div>
+            <label for="fechadenacimiento"> Edad del Usuario:</label> 
+            <input type="date" name="fechadenacimiento" id="fechadenacimiento" required>
+        </div>
+        <div>
+            <label for="email"> Email del Usuario:</label> 
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password"> Contraseña del Usuario:</label> 
+            <input type="password" name="password" id="password" required>
+        </div>
+        <button class="button" type="submit">Enviar</button>
+        <button class="button" type="reset">Resetear</button>
+    </form>    
+        
+    <h1 class="encabezado">Listas</h1>
+    <p class="parrafos"> En esta seccion veremos una lista ordenada y <br>
+        luego una lista desordenada.</p>
+    <h3 class="lista">Lista Ordenada</h3>
+    <ol class="listas">
+        <li>Multimedia</li>
+        <li>Formularios</li>
+        <li>Listas ordenadas y desordenadas</li>
+        <li>Tablas</li>
+    </ol>
+    <h3 class="lista">Lista Desordenada</h3>
+    
+    <ul class="listas">
+        <li>Multimedia</li>
+        <ol>
+            <li>Imagen</li>
+            <li>Video</li>
+            <li>Audio</li>
+        </ol>
+        <li>Formularios</li>
+        <ol>
+            <li>Usuario</li>
+            <li>Edad</li>   
+            <li>Fecha de nacimiento</li> 
+            <li>Contraseña</li>
+        </ol>
+        <li>Listas</li>
+        <ol>
+            <li>Listas Ordenadas</li>
+            <li>Listas Desordenadas</li>
+        </ol>
+        <li>Tablas</li>
+        <ol>
+            <li>Dias de la semana</li>
+            <li>Horarios de cursada</li>
+        </ol>
+    </ul>
+
+    <h1 class="encabezado">Tabla</h1>
+    <p class="parrafos">En esta seccion veremos una tabla con los dias de la semana <br>
+                        y los diferentes horarios de cursada</p>
+    <table id="tabla">
+    <tr class="th">
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sabado</th>
+        <th>Domingo</th> 
+    </tr>
+    <tr class="td">
+        <td>13:30hs a <br> 21hs</td>
+        <td>10:15hs a <br> 17:00hs</td>
+        <td>13:30hs a <br> 19:00hs</td>
+        <td>15:15hs a <br> 17:00hs</td>
+        <td>No hay horarios <br> de cursada</td>
+        <td>Descanso</td>
+        <td>Descanso</td>
+    </tr>
+    </table>
+</body>
+</html>
